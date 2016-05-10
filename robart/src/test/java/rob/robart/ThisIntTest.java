@@ -10,6 +10,6 @@ public class ThisIntTest extends TestCase {
 	public void testSetThisInt(){
 		GetSet g = new GetSet();
 		g.setThisInt(20);
-		assertEquals(15, g.thisInt);
+		assertEquals(20, g.thisInt);
 	}
 }
