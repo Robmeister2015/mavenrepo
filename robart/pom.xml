@@ -21,21 +21,10 @@
       <version>3.8.1</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+    <groupId>org.hudsonci.plugins</groupId>
+    <artifactId>pmd</artifactId>
+    <version>3.34-h-1</version>
+</dependency>
   </dependencies>
-  <reporting>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-pmd-plugin</artifactId>
-            <version>2.7.1</version>
-            <configuration>
-                <linkXRef>false</linkXRef>
-                <targetJdk>1.6</targetJdk>
-                <rulesets>
-                    <ruleset>/rulesets/basic.xml</ruleset>
-                </rulesets>
-            </configuration>
-        </plugin>
-    </plugins>
-</reporting>
 </project>
