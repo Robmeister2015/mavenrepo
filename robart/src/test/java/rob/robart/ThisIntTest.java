@@ -7,6 +7,7 @@ import junit.framework.TestCase;
 public class ThisIntTest extends TestCase {
 
 	// test for commit trigger
+	// yet another change
 	@Test
 	public void testSetThisInt(){
 		GetSet g = new GetSet();
