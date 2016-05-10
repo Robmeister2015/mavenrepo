@@ -15,26 +15,14 @@
   </properties>
  <build>
     <plugins>
-    <plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-pmd-plugin</artifactId>
-<version>${pmd.version}</version>
-<configuration>
-    <linkXRef>true</linkXRef>
-    <sourceEncoding>UTF-8</sourceEncoding>
-    <minimumTokens>100</minimumTokens>
-    <targetJdk>1.7</targetJdk>
-</configuration>
-<executions>
-    <execution>
-        <phase>compile</phase>
-        <goals>
-            <goal>check</goal>
-            <goal>cpd-check</goal>
-        </goals>
-    </execution>
-</executions>
-</plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.6</version>
+        <configuration>
+        <skipEmptyReport>false</skipEmptyReport>
+      </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -45,5 +33,4 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
-
 </project>
